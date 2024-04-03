@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BadassController">
+   <children>
+      <Text layoutX="17.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hola mossy" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e1d53" height="478.0" layoutX="-17.0" layoutY="-55.0" stroke="BLACK" strokeType="INSIDE" width="633.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="47.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" width="340.0" />
+      <Label layoutX="47.0" layoutY="14.0" prefHeight="121.0" prefWidth="340.0" text="Welcome to WIR TRINKEN BIER (WTB)! The Drone Delivery System for All of Your Restaurant Needs" textAlignment="CENTER" textFill="#fcd50e" wrapText="true">
+         <font>
+            <Font name="Britannic Bold" size="22.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="226.0" prefHeight="17.0" prefWidth="192.0" text="i am the map" />
+      <ImageView fx:id="yelldrone" fitHeight="96.0" fitWidth="121.0" layoutX="417.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@yelldrone.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="slowFly" fitHeight="150.0" fitWidth="200.0" layoutX="-235.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@yelldrone.png" />
+         </image>
+      </ImageView>
+      <MenuButton layoutX="435.0" layoutY="42.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Create New...">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ButtonClonk" text="Location" />
+          <MenuItem mnemonicParsing="false" onAction="#ClickMakeRestaurant" text="Restaurant" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickMakeDeliveryService" text="Delivery Service" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickMakePerson" text="Person" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickMakeIngredient" text="Ingredient" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickMakeDrone" text="Drone" />
+        </items>
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="435.0" layoutY="274.0" mnemonicParsing="false" onAction="#ClickFlyDrone" prefHeight="25.0" prefWidth="102.0" text="Fly Drone">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <MenuButton layoutX="436.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Appoint" textAlignment="CENTER">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#ClickAppointManager" text="Manager" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickAppointPilot" text="Pilot" />
+         </items>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="434.0" layoutY="122.0" mnemonicParsing="false" onAction="#ClickHireWorker" prefHeight="25.0" prefWidth="102.0" text="Hire Worker">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="435.0" layoutY="235.0" mnemonicParsing="false" onAction="#ClickTrainPilot" prefHeight="25.0" prefWidth="102.0" text="Train Pilot">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="435.0" layoutY="161.0" mnemonicParsing="false" onAction="#ClickFireWorker" prefHeight="25.0" prefWidth="102.0" text="Fire Worker">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="435.0" layoutY="84.0" mnemonicParsing="false" onAction="#clickDisplayButton" prefHeight="26.0" prefWidth="102.0" text="Display...">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="436.0" layoutY="309.0" mnemonicParsing="false" onAction="#ClickCollectRevenue" prefHeight="25.0" prefWidth="102.0" text="CollectRevenue">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="280.0" layoutY="348.0" mnemonicParsing="false" onAction="#ClickCheckDistance" prefHeight="26.0" prefWidth="102.0" text="Check Distance :)">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <MenuButton layoutX="47.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Ingr. Stuff">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ClickLoadIngredient" text="Load Ingredient" />
+          <MenuItem mnemonicParsing="false" onAction="#ClickPurchaseIngredient" text="Purchase Ingredient" />
+        </items>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="436.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Swarm">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#ClickJoinSwarm" text="Join" />
+            <MenuItem mnemonicParsing="false" onAction="#ClickLeaveSwarm" text="Leave" />
+         </items>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="163.0" layoutY="348.0" mnemonicParsing="false" onAction="#ClickLoadFuel" prefHeight="26.0" prefWidth="102.0" text="Load Fuel">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <GridPane fx:id="mappy" alignment="CENTER" gridLinesVisible="true" layoutX="60.0" layoutY="149.0" prefHeight="173.0" prefWidth="315.0" style="-fx-background-color: green;" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="225.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button layoutX="565.0" layoutY="1.0" mnemonicParsing="false" onAction="#ClickStop" text="Exit" />
+   </children>
+</AnchorPane>
